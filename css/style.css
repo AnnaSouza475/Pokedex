@@ -1,0 +1,199 @@
+/*Zerar as margens e paddings de todo o documento(Remover todos os espaços em branco)*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+/*Colocar o footer ao final*/
+html,body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: #fa6555;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    color: #ffffff;
+  }
+/*Remover bordar do input (foco que o navegador coloca)*/
+input:focus {
+    outline-width: 0;
+}
+
+.fundo-cabecalho {
+  background-color: #fa6555;
+  background-image: url("../image/logo-pokemon.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  padding: 30px 0px;
+}
+
+.formulario-pesquisa {
+  margin-left: 60px;
+}
+
+.formulario-pesquisa p {
+  color: #ffffff;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.formulario-pesquisa input {
+  height: 40px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+}
+
+.formulario-pesquisa button{
+    background-color: #5ae9b2;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    cursor: pointer; /* Colocar a maozinha */
+}
+
+.formulario-pesquisa button:hover{
+    background-color: #42bd8e;
+    
+}
+
+/* .formulario-pesquisa input::placeholder{
+    
+    color: chocolate;
+} */
+
+.cards-menu {
+  display: flex;
+  justify-content: space-around; /*Espaço entre os itens(canto)*/
+  margin: 15px 0;
+}
+
+.cards-menu a {
+  padding: 10px 60px;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  background-image: url("../image/logo-pokemon.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 55px;
+}
+
+.fundo-verde {
+  background-color: #2cdab1;
+}
+.fundo-verde:hover{
+    filter: brightness(1.1); /*Controlaro brilho(quando passa o mouse "hover")*/
+}
+
+.fundo-marrom {
+  background-color: #ca8179;
+}
+
+.fundo-marrom:hover{
+    filter: brightness(1.1); 
+}
+.fundo-amarelo {
+  background-color: #ffce4b;
+}
+
+.fundo-amarelo:hover{
+    filter: brightness(1.1);
+}
+
+.fundo-azul {
+  background-color: #58abf6;
+}
+
+.fundo-azul:hover{
+    filter: brightness(1.1);
+}
+
+.fundo-vermelho {
+  background-color: #f04850;
+}
+
+.fundo-vermelho:hover{
+    filter: brightness(1.1);
+}
+
+.fundo-roxo {
+  background-color: #9f5bba;
+}
+
+.fundo-roxo:hover{
+    filter: brightness(1.1);
+}
+
+.pokemon-news{
+    background-color: #F2F2F2;
+    
+}
+
+.card-news-title{
+    margin: 0 25px;
+    border-radius: 10px;
+    padding: 5px 0;
+    color: #000000;
+    padding-left: 5px;
+
+} 
+
+.card-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 15px;
+}
+
+.card-news a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.card-item{
+    display: flex;
+    margin: 20px 10px;
+    border-radius: 10px;
+    background-color: #e4e1de;
+}
+
+.card-item img{
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.card-item h3{
+    margin-bottom: 10px;
+    max-width: auto;
+}
+
+.card-item-data{
+    color: #EF8555 !important; /*Sobreescrever estilos anteriores(no caso de dois importante no mesmo item o ultimo sobreescreve)*/
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card-item div p{
+    color: #919191;
+    line-height: 20px; /*Espaçamento entre linhas de um texto*/ 
+    max-width: auto; 
+}
+
